@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    int num = (int) argv[1];
+    int num = atoi(argv[1]);
     int qntDivisores = 0;
     
     for (int i = num ; i >= 1 ; i--) {
