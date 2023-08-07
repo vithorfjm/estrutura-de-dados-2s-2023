@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    int num = atoi(argv[1]);
+    int num = atoi(argv[1]); // Transforma a String passada em um inteiro e aloca na variavel 'num'
     int qntDivisores = 0;
     
     for (int i = num ; i >= 1 ; i--) {
