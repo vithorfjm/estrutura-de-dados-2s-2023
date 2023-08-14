@@ -11,9 +11,9 @@ int main(int argc, char *argv[]) {
         }
     }
     if (qntDivisores > 2 || num <= 1) {
-        printf("%d", 0);
+        printf("0");
     } else {
-        printf("%d", 1);
+        printf("1");
     }
 
     return 0;
