@@ -17,5 +17,6 @@ int main() {
     int tamanho_array = sizeof(array) / sizeof(int);
     int resultado = conta_int_array(array, 7, tamanho_array);
     printf("%d", resultado);
+    
     return 0;
 }
