@@ -19,5 +19,6 @@ int main() {
     int array[] = {5, 7, 9, 6};
     int tamanho_array = sizeof(array) / sizeof(int);
     menor_maior_array(array, tamanho_array);
+    
     return 0;
 }
