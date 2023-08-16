@@ -22,5 +22,6 @@ int main() {
         }
         printf("%d, ", resultado[i]);
     }
+    
     return 0;
 }
