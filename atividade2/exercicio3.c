@@ -16,5 +16,6 @@ int main() {
     int tamanho_array = sizeof(array) / sizeof(char*);
     int resultado = busca_string(array, "EDO", tamanho_array);
     printf("%d", resultado);
+    
     return 0;
 }
