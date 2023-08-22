@@ -1,4 +1,4 @@
-# 📚 Atividade 2 (lista 1) - [A, R, R, A, Y, S]
+# 📚 Atividade 2 - [A, R, R, A, Y, S]
 
 ## 👨‍🏫 Instruções
 
