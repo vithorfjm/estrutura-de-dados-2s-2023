@@ -19,8 +19,7 @@ int main(int argc, char* argv[]) {
 
         switch (opcao) {
             case 1:
-                adicionar_produto(produtos, qtdProdutos);
-                qtdProdutos++;
+                qtdProdutos += adicionar_produto(produtos, qtdProdutos);
                 break;
             case 2:
                 listar_produtos(produtos, qtdProdutos);
@@ -29,15 +28,16 @@ int main(int argc, char* argv[]) {
                 editar_produto(produtos, qtdProdutos);
                 break;
             case 4:
+                qtdProdutos += remover_produto(produtos, qtdProdutos);
                 break;
             case 5:
+                printf("Encerrando sistema.");
                 break;
             default:
                 printf("Opcao invalida");
         }
     }
 
-    printf("encerrando sistema.");
 
     exit(0);
 }
