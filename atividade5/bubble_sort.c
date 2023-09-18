@@ -3,11 +3,11 @@
 #include <string.h>
 #include "bubble_sort.h"
 
-void swap(char *a, char *b) {
+void swap(char *x, char *y) {
     char temp[100];
-    strcpy(temp, a);
-    strcpy(a, b);
-    strcpy(b, temp);
+    strcpy(temp, x);
+    strcpy(x, y);
+    strcpy(y, temp);
 }
 
 void bubble_sort(char **arr, int n) {
@@ -16,9 +16,7 @@ void bubble_sort(char **arr, int n) {
         for (int j = 0 ; j < n-1-i ; j++) {
 
             if (strcmp(arr[j], arr[j + 1]) > 0) {
-                char *temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                swap(arr[j], arr[j+1]);
             }
         }
     }
