@@ -3,7 +3,7 @@
 #include "pilha.h"
 
 Pilha* pilha(){
-
+    
     Pilha *p1 = (Pilha*) malloc(sizeof(Pilha));
     p1->topo = NULL;
     p1->qtd = 0;
@@ -18,7 +18,7 @@ void empilhar(Objeto* o, Pilha* P){
 }
 
 Objeto* desempilhar(Pilha* P){
-    if(P->qtd. == 0){
+    if(P->qtd == 0){
         return NULL;
     }
     Objeto* o = P->topo;
