@@ -1,4 +1,4 @@
-typedef struct {
+typedef struct Objeto {
     char valor;
     struct Objeto* proximo_objeto;
 } Objeto;
