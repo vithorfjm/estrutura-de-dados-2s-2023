@@ -36,7 +36,6 @@ void lista_inserir_no_ordenado(No** L, No* no){
 
 void lista_imprimir(No* L){
     if(L != NULL){
-        printf("oi");
         printf("%f ", L->valor);
         lista_imprimir(L->proximo_no);
     } else {
