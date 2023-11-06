@@ -5,16 +5,20 @@
 
 int main(int argc, char *argv[]) {
 
-    printf("INICIANDO PROGRAMA");
+    printf("\n\t === INICIANDO PROGRAMA ===\n");
 
-    hash_table_put("Apple", "Fruit");
-    hash_table_put("Coca", "Drink");
+    printf("\n\t === ADICIONANDO VALORES ===\n");
+    hash_table_put("nome", "Vithor Felix");
+    hash_table_put("sobrenome", "Jales Miranda");
+    hash_table_put("estado", "DF");
+    hash_table_put("profissao", "Estagiario");
+    hash_table_put("time", "FLUMINENSE FOOTBALL CLUB, Campeao da America");
 
-    printf("VALORES INCLUIDOS");
+    printf("\n\t === PRINTANDO  ===");
+    printf("\n NOME: %s %s", hash_table_get("nome"), hash_table_get("sobrenome"));
+    printf("\n ESTADO: %s", hash_table_get("estado"));
+    printf("\n PROFISSAO: %s", hash_table_get("profissao"));
+    printf("\n TIME: %s\n\n", hash_table_get("time"));
 
-    printf("%s", hash_table_get("Drink"));
-    printf("%s", hash_table_get("Fruit"));
-
-    printf("VALORES PRINTADOS");
     return 1;
 }
